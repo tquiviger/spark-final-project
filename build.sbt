@@ -1,4 +1,4 @@
-name := "esgi-spark-final-project"
+name := "spark-final-project"
 
 version := "1.0"
 
@@ -7,8 +7,8 @@ scalaVersion := "2.11.12"
 val SPARK_VERSION = "2.3.1"
 
 libraryDependencies ++= Seq(
-  "org.apache.spark" %% "spark-sql" % SPARK_VERSION,
-  "org.apache.spark" %% "spark-core" % SPARK_VERSION
+  "org.apache.spark" %% "spark-sql" % SPARK_VERSION % "provided",
+  "org.apache.spark" %% "spark-core" % SPARK_VERSION % "provided"
 )
 
 assemblyMergeStrategy in assembly := {
